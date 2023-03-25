@@ -1,4 +1,4 @@
-# FCC-Random-Quote-Machine
+# Random-Quote-Machine
 
 <h1> Front End Libraries Project</h1>
 <p>
