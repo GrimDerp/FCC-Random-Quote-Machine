@@ -5,4 +5,6 @@
 Free Code Camp
 </p>
 HTML, JavaScript, CSS, Bootstrap, SASS, React, Redux, and jQuery
+<p>
 * Angular would have been nice but is not yet supported at this time
+</p>
