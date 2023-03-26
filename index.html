@@ -46,8 +46,9 @@
                 //let randomIndex = Math.floor(Math.random() * quoteLib.length)
                 let randomIndex = Math.floor(Math.random() * quoteSize);
 
-                document.getElementById("text").innerText = "Something Flashy";
-                document.getElementById("author").innerText = "the Author";
+                document.getElementById("text").innerText = quoteLib[2].quote;
+                document.getElementById("author").innerText = quoteLib[2].author;
+                document.getElementById("prompt").innerText = quoteLib[2].prompt;
             }
 
         </script>
