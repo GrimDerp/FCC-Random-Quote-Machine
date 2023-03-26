@@ -7,29 +7,31 @@
        
        <script>
 
-            const quoteLib = {[
+            const quoteLib = [
                 // good place to Curl
                 //being in an array allows for fiddlin with js
+                {
                 quote: "Here is a placeholder quote: Hello There.",  
                 author: "Mark Twain",
                 prompt: "describe a satisfying game loop",
-
-                quote: "Ah. General Kenobi.",
+                }, {
+                    quote: "Ah. General Kenobi.",
                 author: "Mark Hammil",
                 prompt: "Describe a high score leaderboard",
-
-                quote: "Message for you sir!",
+                }, {
+                    quote: "Message for you sir!",
                 author: "Bill Shaxbeard",
                 prompt: "describe a satisfying game loop",
-
-                quote: "Here is a placeholder quote: You should access a large DB of quotes and return them randomly!.", 
+                }, {
+                    quote: "Here is a placeholder quote: You should access a large DB of quotes and return them randomly!.", 
                 author: "Kenny",
                 prompt: "I wrote a Star Trek game in BASIC that ran in DOS pretty well but js is weird man",
-
-                quote: "Here is a placeholder quote: All the world is a stage",
+                }, {
+                    quote: "Here is a placeholder quote: All the world is a stage",
                 author: "ChatGPT el scorcho was here",
-                prompt: "Debug this"
-            ]}
+                prompt: "Debug this",
+                }
+            ]
 
             window.onload = init;
             function init(){
