@@ -4,27 +4,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script>
+            window.onload = init;
+            function init(){
+                document.getElementById("text").innerText = "Something Flashy";
+                document.getElementById("author").innerText = "the Author";
+            }
+        </script>
+
+        <style>
+            * {
+                font-size: 1.5rem;
+            }
+        </style>
+
     <title>Document</title>
+
+
     </head>
         <body>
             <wrapper id="quote-box">
-            <div id="text"></div>
-            <div id="author"></div>
-            <button id="new-quote">New Quote</button>
-            <a id="tweet-quote">Tweet</a>
+                <div id="text"></div>
+                <div id="author"></div>
+                <button id="new-quote" onClick="GenerateQuote()";>New Quote</button>
+                <a src="#" id="tweet-quote">Tweet Quote</a>
 
 
             </wrapper>
             <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-
-
-
-
-
-
-
-
-
 
 
 
