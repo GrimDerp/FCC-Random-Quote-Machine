@@ -15,19 +15,19 @@
                 author: "Mark Twain",
                 prompt: "describe a satisfying game loop",
                 }, {
-                    quote: "Ah. General Kenobi.",
+                quote: "Ah. General Kenobi.",
                 author: "Mark Hammil",
                 prompt: "Describe a high score leaderboard",
                 }, {
-                    quote: "Message for you sir!",
+                quote: "Message for you sir!",
                 author: "Bill Shaxbeard",
                 prompt: "describe a satisfying game loop",
                 }, {
-                    quote: "Here is a placeholder quote: You should access a large DB of quotes and return them randomly!.", 
+                quote: "Here is a placeholder quote: You should access a large DB of quotes and return them randomly!.", 
                 author: "Kenny",
                 prompt: "I wrote a Star Trek game in BASIC that ran in DOS pretty well but js is weird man",
                 }, {
-                    quote: "Here is a placeholder quote: All the world is a stage",
+                quote: "Here is a placeholder quote: All the world is a stage",
                 author: "ChatGPT el scorcho was here",
                 prompt: "Debug this",
                 }
@@ -40,16 +40,22 @@
 
             
 
+    //math.random() * quoteLib.length;
+    //let randomIndex = Math.floor(Math.random() * quoteLib.length)
             function GenerateQuote(){
                 let quoteSize = quoteLib.length;
-                //math.random() * quoteLib.length;
-                //let randomIndex = Math.floor(Math.random() * quoteLib.length)
                 let randomIndex = Math.floor(Math.random() * quoteSize);
+                let randomQuoteData = quoteLib[randomIndex];
 
-                document.getElementById("text").innerText = quoteLib[2].quote;
-                document.getElementById("author").innerText = quoteLib[2].author;
-                document.getElementById("prompt").innerText = quoteLib[2].prompt;
+
+
+                document.getElementById("text").innerText = randomQuoteData.quote;
+                document.getElementById("author").innerText = randomQuoteData.author;
+                //document.getElementById("prompt").innerText = quoteLib[2].prompt;
             }
+
+
+
 
         </script>
 
