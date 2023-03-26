@@ -51,10 +51,10 @@
 
                 document.getElementById("text").innerText = randomQuoteData.quote;
                 document.getElementById("author").innerText = randomQuoteData.author;
-                //document.getElementById("prompt").innerText = quoteLib[2].prompt;
+                document.getElementById("tweet-quote").href = twitterLink;
             }
 
-
+        let twitterLink = "https://twitter.com/share?ref_src=twsrc%5Etfw";
 
 
         </script>
@@ -65,6 +65,10 @@
             }
         </style>
 
+       
+
+
+
     <title>Document</title>
 
 
@@ -74,7 +78,7 @@
                 <div id="text"></div>
                 <div id="author"></div>
                 <button id="new-quote" onClick="GenerateQuote()";>New Quote</button>
-                <a src="#" id="tweet-quote">Tweet Quote</a>
+                <a href="#" id="tweet-quote" class="button">Tweet Quote</a>
 
 
             </wrapper>
