@@ -54,14 +54,24 @@
                 document.getElementById("tweet-quote").href = twitterLink;
             }
 
-        let twitterLink = "https://twitter.com/share?ref_src=twsrc%5Etfw";
+        let twitterLink = "https://twitter.com/intent/tweet?hashtags=quotes&amp;related=freecodecamp&amp;text=%22Remember%20that%20not%20getting%20what%20you%20want%20is%20sometimes%20a%20wonderful%20stroke%20of%20luck.%22%20Dalai%20Lama";
 
+        
+
+        // trying to add a qote
+        let quoteInApiFormat = randomQuoteData.quote.replace(/ /g, "%20");
+        twitterLink += quoteInApiFormat
+        //author
+        let authorInApiFormat = randomQuoteData.author.replace(/ /g, "%20");
+        twitterLink += " - " + authorInApiFormat
 
         </script>
 
         <style>
             * {
                 font-size: 1.5rem;
+                margin: 15px 15px 15px
+                text
             }
         </style>
 
@@ -78,7 +88,7 @@
                 <div id="text"></div>
                 <div id="author"></div>
                 <button id="new-quote" onClick="GenerateQuote()";>New Quote</button>
-                <a href="#" id="tweet-quote" class="button">Tweet Quote</a>
+                <a href="#" id="tweet-quote" target="_blank" class="button">Tweet Quote</a>
 
 
             </wrapper>
