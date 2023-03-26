@@ -38,9 +38,12 @@
                 GenerateQuote()
             }
 
+            
+
             function GenerateQuote(){
                 let quoteSize = quoteLib.length;
-                math.random() * quoteLib.length;
+                //math.random() * quoteLib.length;
+                let randomIndex = Math.floor(Math.random() * quoteLib.length)
 
                 document.getElementById("text").innerText = "Something Flashy";
                 document.getElementById("author").innerText = "the Author";
